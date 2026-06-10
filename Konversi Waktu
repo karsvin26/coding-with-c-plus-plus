@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	system("color F1");
+	awal:
+    printf("\t\t      Konversi dari Detik ke Menit dan Jam \n\n\n");
+    printf(" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
+int jam,menit,detik,dicari,awal,pilih;
+
+printf ("MASUKAN DETIK  = ");
+scanf ("%d",&dicari);
+
+jam=dicari/3600;
+menit=(dicari-(jam*3600))/60;
+detik=dicari-((jam*3600)+(menit*60));
+
+printf ("\n%d JAM, %d MENIT, %d DETIK",jam,menit,detik);
+printf("\n\n");
+printf("\n\nINGIN LANJUTKAN PROGRAM?  (1)YES\n\t\t\t  (2)N0\n\t\t\t  (PILIH ANGKA)\t=    ");
+scanf("%d",&pilih);
+ if (pilih==1)
+     {
+      system("cls");
+      goto awal;
+     }
+ else
+system("color F1");
+getch();
+}
